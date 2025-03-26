@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laika Pārveidotājs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Laika Pārveidotājs</h1>
+    <p>Izvēlies pārveidošanas opciju un ievadi vērtību:</p>
+    <label for="conversion">Pārveidošanas opcija:</label>
+    <select id="conversion">
+        <option value="seconds-to-minutes">Sekundes uz minūtēm</option>
+        <option value="minutes-to-hours">Minūtes uz stundām</option>
+    </select>
+    <br>
+    <label for="value">Ievadi vērtību:</label>
+    <input type="number" id="value" placeholder="Ievadi skaitli">
+    <br>
+    <button onclick="convertTime()">Pārveidot</button>
+    <p id="result"></p>
+    <script src="script.js"></script>
+</body>
+</html>
