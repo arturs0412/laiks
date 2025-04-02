@@ -1,0 +1,19 @@
+import sqlite3
+
+# Izveidot datu bāzi
+conn = sqlite3.connect('calculations.db')
+cursor = conn.cursor()
+
+# Izveidot tabulu
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS calculations (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    input_value REAL NOT NULL,
+    conversion_type TEXT NOT NULL,
+    result REAL NOT NULL,
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+)
+''')
+
+conn.commit()
+conn.close()

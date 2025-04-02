@@ -1,24 +1,69 @@
+/* Kopējais ķermeņa stils */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 20px;
-    background-color: #f4f4f9;
-}
-
-h1 {
+    background-color: #f8f9fa;
     color: #333;
+    padding: 10px;
 }
 
+/* Galvenā virsraksta stils */
+h1 {
+    color: #4a90e2;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Etiķetes un ieejas stils */
+label {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Ievades laukums */
+input {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+}
+
+/* Poga */
 button {
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+/* Kad peles kursors ir uz pogas */
 button:hover {
     background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Rezultāta paragrāfa stils */
+#result {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Izvēlne */
+select {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
 }

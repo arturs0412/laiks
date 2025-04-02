@@ -3,23 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laika Pārveidotājs</title>
+    <title>Time Modifier</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Laika Pārveidotājs</h1>
-    <p>Izvēlies pārveidošanas opciju un ievadi vērtību:</p>
-    <label for="conversion">Pārveidošanas opcija:</label>
+    <h1>Time Converter</h1>
+    <p>Choose a conversion option and enter a value:</p>
+
+    <label for="conversion">Conversion option:</label>
     <select id="conversion">
-        <option value="seconds-to-minutes">Sekundes uz minūtēm</option>
-        <option value="minutes-to-hours">Minūtes uz stundām</option>
+        <option value="seconds-to-minutes">Seconds to minutes</option>
+        <option value="seconds-to-hours">Seconds to hours</option>
+        <option value="minutes-to-hours">Minutes to hours</option>
+        <option value="hours-to-minutes">Hours to minutes</option>
+        <option value="hours-to-seconds">Hours to seconds</option>
     </select>
+
     <br>
-    <label for="value">Ievadi vērtību:</label>
+
+    <label for="value">Enter a value:</label>
     <input type="number" id="value" placeholder="Ievadi skaitli">
+
     <br>
+
     <button onclick="convertTime()">Pārveidot</button>
+
     <p id="result"></p>
+
     <script src="script.js"></script>
 </body>
 </html>
